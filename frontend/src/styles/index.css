@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Neutral Hues (Apple/Notion/Linear Inspired) */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 4%;
+
+    /* Cards and Surface Panels */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 4%;
+
+    /* Brand / Accent Colors (Indigo-Violet Spectrum) */
+    --primary: 250 89% 60%;         /* Vibrant premium Indigo-Violet */
+    --primary-hover: 250 89% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary Elements */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 4%;
+
+    /* Muted Elements */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    /* Accent Settings */
+    --accent: 250 89% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive Elements (Soft Red) */
+    --destructive: 346 84% 61%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders, Inputs and Ring Focuses */
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 250 89% 60%;
+
+    /* Global Border Radius */
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Neutral Dark Hues (Warm Obsidian Slate) */
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+
+    /* Cards and Surface Panels */
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Brand / Accent Colors */
+    --primary: 250 95% 68%;
+    --primary-hover: 250 95% 73%;
+    --primary-foreground: 240 10% 4%;
+
+    /* Secondary Elements */
+    --secondary: 240 6% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Muted Elements */
+    --muted: 240 6% 12%;
+    --muted-foreground: 240 5% 65%;
+
+    /* Accent Settings */
+    --accent: 250 95% 68%;
+    --accent-foreground: 240 10% 4%;
+
+    /* Destructive Elements */
+    --destructive: 346 84% 61%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders, Inputs and Ring Focuses */
+    --border: 240 6% 15%;
+    --input: 240 6% 15%;
+    --ring: 250 95% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-theme duration-200 ease-premium;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Premium scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/45 transition-colors;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-background/70 backdrop-blur-md border border-border;
+  }
+}

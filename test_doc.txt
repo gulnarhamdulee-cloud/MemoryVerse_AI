@@ -1,0 +1,16 @@
+MemoryVerse AI - Personal Knowledge Note
+=========================================
+
+Date: 2026-06-27
+Category: Personal Journal / Research
+Topic: The Concept of a Digital Second Brain
+
+A "Second Brain" is a methodology for saving and systematically reminding ourselves of the ideas, inspirations, insights, and connections we've gained through our experience. It is an external, centralized, digital repository where you store your notes, documents, timeline events, and web clippings.
+
+Core pillars of memory retention:
+1. Capture: Keep what resonates.
+2. Organize: Group by actionable projects.
+3. Distill: Summarize down to the core essence.
+4. Express: Retrieve information to create and connect ideas.
+
+This file serves as a text memory preview verification file for the MemoryVerse AI application.
