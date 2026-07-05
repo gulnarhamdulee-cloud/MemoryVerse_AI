@@ -128,9 +128,11 @@ export default function Layout({ children }) {
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.path;
+            const id = `tour-sidebar-${item.path.slice(1)}`;
             return (
               <Link
                 key={item.path}
+                id={id}
                 to={item.path}
                 className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
                   isActive
